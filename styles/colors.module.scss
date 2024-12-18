@@ -1,0 +1,67 @@
+$background: #f8f4ec;
+$background-dark: #b5b5b5;
+$primary: #8eccc1;
+$secondary: #ad6264;
+$main-text: #1f1d1d;
+
+$demographics1: #9a464a;
+$demographics2: #e98c8d;
+$demographics3: #f5c8c8;
+$demographics4: #ffe4e4;
+
+$highschool1: #165a91;
+$highschool2: #4278b2;
+$highschool3: #6698d4;
+$highschool4: #8fbedc;
+$highschool5: #c1e1f4;
+
+$academics1: #f47c62;
+$academics2: #ff9b7a;
+$academics3: #ffae93;
+$academics4: #ffcab5;
+$academics5: #ffdfd3;
+$academics6: #ffede8;
+
+$coop1: #8b6b8f;
+$coop2: #a67fa7;
+$coop3: #c1a3c3;
+$coop4: #dfcae1;
+$coop5: #f5e5f5;
+
+$lifestyle1: #538659;
+$lifestyle2: #74a879;
+$lifestyle3: #9fd4a3;
+$lifestyle4: #bee3ba;
+$lifestyle5: #ddf2d1;
+
+:export {
+  backgroundDark: $background-dark;
+  primary: $primary;
+  secondary: $secondary;
+  mainText: $main-text;
+  demographics1: $demographics1;
+  demographics2: $demographics2;
+  demographics3: $demographics3;
+  demographics4: $demographics4;
+  highschool1: $highschool1;
+  highschool2: $highschool2;
+  highschool3: $highschool3;
+  highschool4: $highschool4;
+  highschool5: $highschool5;
+  academics1: $academics1;
+  academics2: $academics2;
+  academics3: $academics3;
+  academics4: $academics4;
+  academics5: $academics5;
+  academics6: $academics6;
+  coop1: $coop1;
+  coop2: $coop2;
+  coop3: $coop3;
+  coop4: $coop4;
+  coop5: $coop5;
+  lifestyle1: $lifestyle1;
+  lifestyle2: $lifestyle2;
+  lifestyle3: $lifestyle3;
+  lifestyle4: $lifestyle4;
+  lifestyle5: $lifestyle5;
+}

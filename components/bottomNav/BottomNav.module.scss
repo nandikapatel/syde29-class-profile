@@ -1,0 +1,49 @@
+@import "../../styles/colors.module";
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0 1rem;
+
+  .linkContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .text {
+      font-weight: 500;
+      font-size: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      .text {
+        color: $primary;
+        transform: scale(1.1);
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      flex-direction: column;
+
+      .text {
+        order: 1;
+        font-size: 18px;
+      }
+
+      .arrow {
+        order: 2;
+      }
+    }
+  }
+
+  .arrow {
+    max-width: 175px;
+    width: 100%;
+  }
+}
+
+.nextLinkOnly {
+  justify-content: flex-end;
+}

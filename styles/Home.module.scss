@@ -1,0 +1,91 @@
+@import "./colors.module";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6rem;
+
+  .textContainer {
+    height: 550px;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
+      width: 100%;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      gap: 1rem;
+
+      a {
+        position: relative;
+        width: fit-content;
+        color: $main-text;
+
+        span {
+          font-size: 24px;
+          padding-right: 0.5rem;
+          margin: 0;
+        }
+
+        span,
+        .icon {
+          font-weight: 500;
+          display: inline-block;
+        }
+      }
+
+      a::before {
+        content: "";
+        background-color: $primary;
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        width: 100%;
+        height: 6px;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+      }
+
+      a:hover::before {
+        height: 100%;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 0 4rem;
+
+    .imageContainer {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 2rem;
+
+    .textContainer {
+      height: 525px;
+
+      .text > a > span {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container > .textContainer {
+    height: 600px;
+  }
+}

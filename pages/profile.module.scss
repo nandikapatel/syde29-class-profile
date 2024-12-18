@@ -1,0 +1,126 @@
+@import "../styles/colors.module";
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  padding: 0 6rem;
+  max-width: 1100px;
+
+  .singleChart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .doubleChart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+
+    .textRight {
+      margin-left: 6rem;
+    }
+
+    .textLeft {
+      margin-right: 6rem;
+    }
+  }
+
+  .wordCloudContainer {
+    width: 100%;
+
+    .wordCloud {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+    }
+  }
+}
+
+.demographics {
+  h2 {
+    color: $demographics2;
+  }
+  h3 {
+    color: $demographics1;
+  }
+}
+
+.highschool {
+  h2 {
+    color: $highschool3;
+  }
+  h3 {
+    color: $highschool2;
+  }
+}
+
+.academics {
+  h2 {
+    color: $academics2;
+  }
+  h3 {
+    color: $academics1;
+  }
+}
+
+.coop {
+  h2 {
+    color: $coop2;
+  }
+  h3 {
+    color: $coop1;
+  }
+}
+
+.lifestyle {
+  h2 {
+    color: $lifestyle2;
+  }
+  h3 {
+    color: $lifestyle1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    .singleChart,
+    .doubleChart {
+      margin-top: 0.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .doubleChart {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      .textRight {
+        margin-left: 0;
+      }
+
+      .textLeft {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 0 1.5rem;
+  }
+}

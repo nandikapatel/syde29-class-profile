@@ -1,0 +1,24 @@
+.double {
+  width: 475px;
+  height: 100%;
+
+  @media screen and (max-width: 1200px) {
+    width: 75%;
+    min-width: 350px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    min-width: 325px;
+  }
+}
+
+.single {
+  width: 650px;
+  height: 100%;
+
+  @media screen and (max-width: 1200px) {
+    width: 75%;
+    min-width: 325px;
+  }
+}

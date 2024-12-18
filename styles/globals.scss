@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap");
+@import "./colors.module";
+
+:root {
+  font-family: "Poppins", sans-serif;
+  background-color: $background;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: $main-text;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 42px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: $main-text;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 33px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  h4 {
+    font-size: 19px;
+  }
+  h5 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 16px;
+  }
+}

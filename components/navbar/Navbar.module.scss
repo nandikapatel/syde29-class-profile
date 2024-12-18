@@ -1,0 +1,143 @@
+@import "../../styles/colors.module";
+
+.backgroundTintCommon {
+  background-color: $background-dark;
+  animation: fadeIn 1s;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 0.8s, visibility 0.8s;
+}
+
+.backgroundTintOn {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+.backgroundTintOff {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 2rem 6rem;
+  background: $background;
+  z-index: 98;
+
+  .logo {
+    font-family: "Bitter";
+    color: $main-text;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+.menuIcon {
+  color: $main-text;
+  background: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 20rem;
+  height: 100vh;
+  background: $background;
+  padding-left: 3rem;
+  z-index: 100;
+  transition: transform 0.8s;
+  overflow: auto;
+
+  .menuHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+
+    h2 {
+      color: $secondary;
+    }
+
+    .closeMenuIcon {
+      margin-right: 2rem;
+      transition: transform 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .sectionsContainer {
+    padding: 0 0 8rem;
+
+    li {
+      list-style: none;
+      transition: transform 0.3s ease-in-out;
+      line-height: 35px;
+
+      h4:hover {
+        color: $primary;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.sideBarClosed {
+  transition: transform 0.8s;
+  transform: translateX(100%);
+}
+
+@media screen and (max-width: 900px) {
+  .headerContainer {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .headerContainer {
+    padding: 1.5rem;
+  }
+
+  .sideBar {
+    width: 17rem;
+    padding-left: 2.5rem;
+
+    .menuHeader > .closeMenuIcon {
+      margin-right: 1rem;
+    }
+  }
+}
