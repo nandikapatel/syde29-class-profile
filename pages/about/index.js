@@ -8,24 +8,24 @@ export default function About() {
   const contributors = [
     {
       id: 1,
+      name: "Nandika Patel",
+      role: "Developer",
+      photo: "/assets/Nikki.JPG",
+      linkedin: "https://www.linkedin.com/in/nandika-patel-348807284/?originalSubdomain=ca",
+    },
+    {
+      id: 2,
+      name: "Nikki Rana",
+      role: "Project Manager / Data",
+      photo: "/assets/nina.png",
+      linkedin: "https://www.linkedin.com/in/nikki-rana735",
+    },
+    {
+      id: 3,
       name: "Marwa Zaryab",
       role: "Developer",
       photo: "/assets/Marwa.JPG",
       linkedin: "https://www.linkedin.com/in/marwazaryab/",
-    },
-    {
-      id: 2,
-      name: "Nandika Patel",
-      role: "Developer",
-      photo: "/assets/nina.png",
-      linkedin: "",
-    },
-    {
-      id: 3,
-      name: "Nikki Rana",
-      role: "Data",
-      photo: "/assets/Nikki.JPG",
-      linkedin: "https://www.linkedin.com/in/albertnguyentran/",
     },
     {
       id: 4,
@@ -53,7 +53,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About | SYDE '27</title>
+        <title>About | SYDE '29</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -91,14 +91,13 @@ export default function About() {
           Inspired by past SYDE cohorts, we have put together this class profile
           to shed light on students' experiences during the first term of the
           program. We hope that this profile provides you with insight on the
-          SYDE experience for the class of 2027, as well as the individuals who
+          SYDE experience for the class of 2029, as well as the individuals who
           make up this diverse program.
         </p>
         <p>
           The findings in this profile were derived from the results of a class
-          survey conducted by SYDE '27 students. 82 out of 106 students (77%) of
-          students in our first year class responded to the survey. A second
-          survey was sent out with 62 (58%) respondents so far. All questions
+          survey conducted by SYDE '29 students. 66 out of 95 students (70%) of
+          students in our first year class responded to the survey. All questions
           were optional. The data presented in this class profile may not be a
           complete reflection of the class and as such, this profile includes
           the number of respondents for each data set.
