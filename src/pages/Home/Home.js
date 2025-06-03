@@ -18,7 +18,7 @@ const Home = () => {
       <Star />
       <div className="content main-content">
         <h1>A look into SYDE</h1>
-        <Link className="profile-link" to="/profile">go to profile <span role="img" aria-label="arrow">✈️</span></Link>
+        <Link className="profile-link" to="/profile">go to profile <span role="img" aria-label="arrow"></span></Link>
       </div>
     </div>
   );
