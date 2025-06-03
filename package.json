@@ -3,12 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-loader": "^8.1.0",
     "cra-template": "1.2.0",
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^6.0.0",
     "react-scripts": "^3.0.1",
-    "web-vitals": "^4.2.4"
+    "web-vitals": "^4.2.4",
+    "webpack": "^4.42.0",
+    "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
     "start": "react-scripts start",

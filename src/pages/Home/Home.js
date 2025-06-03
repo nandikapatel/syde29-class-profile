@@ -1,18 +1,24 @@
 import React from "react";
 import "./Home.css";
 import Star from "../../components/Stars";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="home-container">
+      <nav className="navbar">
+        <div className="navbar-logo">syde 2027</div>
+        <ul className="navbar-links">
+          <li><Link to="/blogs">Blogs</Link></li>
+          <li><Link to="/webring">Webring</Link></li>
+          <li><Link to="/demographics">Demographics</Link></li>
+          <li><Link to="/about">About</Link></li>
+        </ul>
+      </nav>
       <Star />
-      
-      <div className="content">
-        <h2 className="top-left">A LOOK</h2>
-        <h2 className="middle-left">IN</h2>
-        <h3 className="middle-right">SYDE</h3>
-        <h2 className="bottom">CLASS OF '29!</h2>
-        <button className="button">LET'S GO!</button>
+      <div className="content main-content">
+        <h1>Systems Design Engineering 2027 Class Profile!</h1>
+        <Link className="profile-link" to="/profile">go to profile <span role="img" aria-label="arrow">✈️</span></Link>
       </div>
     </div>
   );
