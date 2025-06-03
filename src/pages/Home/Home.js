@@ -17,7 +17,7 @@ const Home = () => {
       </nav>
       <Star />
       <div className="content main-content">
-        <h1>Systems Design Engineering 2027 Class Profile!</h1>
+        <h1>A look into SYDE</h1>
         <Link className="profile-link" to="/profile">go to profile <span role="img" aria-label="arrow">✈️</span></Link>
       </div>
     </div>
