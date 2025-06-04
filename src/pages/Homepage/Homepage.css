@@ -1,0 +1,124 @@
+.homepage-bg {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #18191c;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star {
+    position: absolute;
+    filter: blur(60px);
+    opacity: 0.7;
+}
+
+.star-purple {
+    top: -10%;
+    left: 10%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle at 50% 50%, #a06ba5 60%, transparent 100%);
+    z-index: 1;
+}
+
+.star-green {
+    top: 40%;
+    left: 60%;
+    width: 35vw;
+    height: 35vw;
+    background: radial-gradient(circle at 50% 50%, #7bb661 60%, transparent 100%);
+    z-index: 1;
+}
+
+.homepage-content {
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5vw 8vw;
+}
+
+.homepage-title {
+    color: #f3f3f3;
+    font-family: 'Futura', 'Arial', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.look {
+    font-size: 3vw;
+    margin-right: 1vw;
+    letter-spacing: 0.1em;
+}
+
+.in {
+    font-size: 3vw;
+    margin-right: 1vw;
+    letter-spacing: 0.1em;
+}
+
+.syde {
+    font-size: 7vw;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    margin-left: 1vw;
+}
+
+.classof {
+    font-size: 2.5vw;
+    margin-top: 1vw;
+    margin-left: 20vw;
+    letter-spacing: 0.1em;
+}
+
+.letsgo-btn {
+    position: absolute;
+    right: 4vw;
+    bottom: 4vw;
+    padding: 1vw 2.5vw;
+    font-size: 1.5vw;
+    font-family: 'Futura', 'Arial', sans-serif;
+    font-weight: bold;
+    color: #18191c;
+    background: linear-gradient(90deg, #ff6e23, #ffae00, #c5ff79);
+    border: none;
+    border-radius: 2vw;
+    cursor: pointer;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    transition: background 0.2s, color 0.2s;
+    z-index: 3;
+}
+
+.letsgo-btn:hover {
+    background: linear-gradient(90deg, #ffae00, #ff6e23, #c5ff79);
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .homepage-sidebar {
+        width: 180px;
+        padding-left: 16px;
+    }
+
+    .sidebar-title {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .sidebar-list li {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+}
