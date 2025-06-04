@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Homepage.css";
 
 const Homepage = () => {
+    const navigate = useNavigate();
     return (
         <div className="homepage-bg">
-            <nav className="homepage-navbar">
+            <div className="homepage-logo" onClick={() => navigate("/")}>SYDE</div>
+            <div className="homepage-navbar">
                 <ul>
                     <li><a href="#demographics">Demographics</a></li>
                     <li><a href="#highschool">High School</a></li>
@@ -13,7 +16,7 @@ const Homepage = () => {
                     <li><a href="#lifestyle">Lifestyle</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>
-            </nav>
+            </div>
             <div className="star star-purple"></div>
             <div className="star star-green"></div>
             <div className="homepage-content">
