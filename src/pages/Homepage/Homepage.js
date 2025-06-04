@@ -19,14 +19,8 @@ const Homepage = () => {
             <div className="homepage-content">
                 <div className="homepage-title">
                     <div className="row">
-                        <span className="look">THIS</span>
-                    </div>
-                    <div className="row">
-                        <span className="in">IN</span>
-                        <span className="syde">SYDE</span>
-                    </div>
-                    <div className="row">
-                        <span className="classof">CLASS OF '29!</span>
+                        <span className="look">THIS IS</span>
+                        <span className="syde">SYDE '29</span>
                     </div>
                 </div>
             </div>
