@@ -1,9 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./Homepage.css";
 
 const Homepage = () => {
-    const navigate = useNavigate();
     return (
         <div className="homepage-bg">
             <div className="homepage-navbar">
