@@ -15,11 +15,11 @@ const Home = () => {
           <li><Link to="/about">About</Link></li>
         </ul>
       </nav>
-      <Star />
       <div className="content main-content">
-        <h1>A look into SYDE</h1>
+        <h1>A Look Into SYDE</h1>
         <Link className="profile-link" to="/profile">go to profile <span role="img" aria-label="arrow"></span></Link>
       </div>
+      <Star />
     </div>
   );
 };
