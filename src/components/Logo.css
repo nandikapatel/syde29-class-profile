@@ -13,7 +13,7 @@
     text-fill-color: transparent;
     letter-spacing: 0.1em;
     cursor: pointer;
-    z-index: 200;
+    z-index: 9999;
     transition: opacity 0.2s, transform 0.2s;
 }
 

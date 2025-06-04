@@ -6,7 +6,6 @@ const Homepage = () => {
     const navigate = useNavigate();
     return (
         <div className="homepage-bg">
-            <div className="homepage-logo" onClick={() => navigate("/")}>SYDE</div>
             <div className="homepage-navbar">
                 <ul>
                     <li><a href="#demographics">Demographics</a></li>
