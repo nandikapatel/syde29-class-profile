@@ -1,0 +1,23 @@
+.homepage-logo {
+    position: fixed;
+    top: 18px;
+    left: 32px;
+    font-family: 'Futura', 'Arial', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+    background: linear-gradient(90deg, #a06ba5 60%, #7bb661 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    z-index: 9999;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.homepage-logo:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
